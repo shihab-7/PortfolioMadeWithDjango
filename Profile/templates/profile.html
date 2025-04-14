@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-s"></i>
+                <a class="navbar-brand " style="font-size:1.5rem;" href="#"><span style="color:orange;" >H</span><span style="color:white;" >I</span><span style="color:red;">H</span><span style="color:white;">A</span><span style="color:cyan;">B</span></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-lg-5">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<main>
+    <section class="firstpage spacing" id="home">
+        <div class="container">
+            <div class="hero-text">
+                <h5>Hi , I'm <span class="input"></span></h5>
+                <h1>Shihab Shariar</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, tenetur. Sunt magnam, repellat
+                    impedit sint debitis ea repellendus magni a quod natus voluptate inventore delectus fugiat
+                    cupiditate? Perspiciatis nostrum officiis corrupti consequatur. Atque harum, nobis, distinctio
+                    beatae ab doloribus voluptas enim repellat ipsa accusamus, obcaecati aliquam? Tempora eligendi quae,
+                    amet porro a facilis debitis aperiam, iste delectus assumenda, numquam commodi odio fugiat doloribus
+                    dolores sapiente? Ea fugit esse pariatur sit?</p>
+                <div class="btn-group">
+                    <a href="#" class="btn">Download CV</a>
+                    <a href="#" class="btn">Contact</a>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-pic">
+                <img src="{% static 'image/myPortfoliopicture.png' %}" alt="profilepic">
+            </div>
+        </div>
+    </section>
+    <section class="about py-5 spacing mt-5" id="about">
+    <div class="container text-center mb-4">
+        <h2 style="color:cyan;">About</h2>
+    </div>
+    <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card mx-auto" style="max-width: 18rem;">
+                    <img src="{% static 'image/moon.jpg' %}" class="card-img-top" alt="Place 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Home</h5>
+                        <a href="https://www.google.com/maps/place/Home" target="_blank" class="btn btn-primary">
+                            <i class="fa-solid fa-location-dot"></i> Location
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card mx-auto" style="max-width: 18rem;">
+                    <img src="{% static 'image/moon.jpg' %}" class="card-img-top" alt="Place 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Office</h5>
+                        <a href="https://www.google.com/maps/place/Office" target="_blank" class="btn btn-primary">
+                            <i class="fa-solid fa-location-dot"></i> Location
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card mx-auto" style="max-width: 18rem;">
+                    <img src="{% static 'image/moon.jpg' %}" class="card-img-top" alt="Place 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Favorite Spot</h5>
+                        <a href="https://www.google.com/maps/place/Favorite+Spot" target="_blank" class="btn btn-primary">
+                            <i class="fa-solid fa-location-dot"></i> Location
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+        <h2 class="mt-5" style="color:cyan;">Achievements & Certificates</h2>
+    <div class="container text-center my-5">
+        <div class="scrolling-wrapper d-flex overflow-auto">
+            <div class="card mx-2" style="min-width: 18rem;">
+                <img src="{% static 'image/moon.jpg' %}" class="card-img-top" alt="Certificate 1" >
+                <div class="card-body">
+                    <h5 class="card-title">Certificate 1</h5>
+                    <p class="card-text">Description of Certificate 1</p>
+                </div>
+            </div>
+            <div class="card mx-2" style="min-width: 18rem;">
+                <img src="{% static 'image/moon.jpg' %}" class="card-img-top" alt="Certificate 2" >
+                <div class="card-body">
+                    <h5 class="card-title">Certificate 2</h5>
+                    <p class="card-text">Description of Certificate 2</p>
+                </div>
+            </div>
+            <div class="card mx-2" style="min-width: 18rem;">
+                <img src="{% static 'image/moon.jpg' %}" class="card-img-top" alt="Certificate 3">
+                <div class="card-body">
+                    <h5 class="card-title">Certificate 3</h5>
+                    <p class="card-text">Description of Certificate 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    <section class="projects spacing" id="projects">
+    <div class="container text-center mb-4">
+        <h2 style="color:cyan;">My Projects</h2>
+    </div>
+    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card mx-auto" style="max-width: 18rem;">
+                    <img src="{% static 'image/moon.jpg' %}" class="card-img-top" alt="Project 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Project 1</h5>
+                        <a href="#" class="btn btn-primary">View</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card mx-auto" style="max-width: 18rem;">
+                    <img src="{% static 'image/moon.jpg' %}" class="card-img-top" alt="Project 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Project 2</h5>
+                        <a href="#" class="btn btn-primary">View</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card mx-auto" style="max-width: 18rem;">
+                    <img src="{% static 'image/moon.jpg' %}" class="card-img-top" alt="Project 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Project 3</h5>
+                        <a href="#" class="btn btn-primary">View</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </section>
+    <section class="spacing py-5" id="contact">
+        <div class="container text-center mb-2">
+            <h2 style="color:cyan;">Contact Me</h2>
+        </div>
+    <div class="container" >
+        <div class="card mx-auto" style="max-width: 600px; background-image: url('{% static "image/moon.jpg" %}'); background-size: cover; background-position: center; color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            <div class="card-body">
+                <h3 class="card-title text-center mb-4">Get in Touch</h3>
+                <form method="post" action="">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="footer bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>About Me</h5>
+                <p>I am a passionate Django developer with expertise in backend development, problem-solving, and creating dynamic web applications.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#about" class="text-white text-decoration-none">About</a></li>
+                    <li><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+                    <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Follow Me</h5>
+                <div class="d-flex">
+                    <a href="#" class="text-white me-3"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fa-brands fa-github fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p class="mb-0">&copy; 2023 My Portfolio. All rights reserved.</p>
+        </div>
+    </div>
+    </section>
+
+</main>
+{% endblock %}

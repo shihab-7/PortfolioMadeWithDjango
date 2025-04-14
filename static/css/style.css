@@ -1,0 +1,19 @@
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px #0ff;
+    font-weight: 600;
+    height: 70px;
+}
+
+.scrolling-wrapper {
+    animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
