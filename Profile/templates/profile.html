@@ -1,25 +1,32 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <div class="logo">
-                <i class="fa-solid fa-s"></i>
-                <a class="navbar-brand " style="font-size:1.5rem;" href="#"><span style="color:orange;" >H</span><span style="color:white;" >I</span><span style="color:red;">H</span><span style="color:white;">A</span><span style="color:cyan;">B</span></a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-lg-5">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
-                </ul>
-            </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand " style="font-size:1.5rem;" href="#home"><span>S</span><span style="color:orange;" >H</span><span style="color:white;" >I</span><span style="color:red;">H</span><span style="color:white;">A</span><span style="color:cyan;">B</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+    
 <main>
     <section class="firstpage spacing" id="home">
         <div class="container">
@@ -175,12 +182,11 @@
     </section>
     <section class="spacing py-5" id="contact">
         <div class="container text-center mb-2">
-            <h2 style="color:cyan;">Contact Me</h2>
         </div>
     <div class="container" >
-        <div class="card mx-auto" style="max-width: 600px; background-image: url('{% static "image/moon.jpg" %}'); background-size: cover; background-position: center; color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <div class="card mx-auto" style="max-width: 100%; width: 90%; background-image: url('{% static "image/galaxy.gif" %}'); background-size: cover; background-position: center; color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
             <div class="card-body">
-                <h3 class="card-title text-center mb-4">Get in Touch</h3>
+                <h2 style="color:cyan;text-align:center;">Contact Me</h2>
                 <form method="post" action="">
                     {% csrf_token %}
                     <div class="mb-3">
@@ -234,6 +240,5 @@
         </div>
     </div>
     </section>
-
 </main>
 {% endblock %}
